@@ -1,24 +1,16 @@
-from sklearn.datasets import fetch_20newsgroups
 import sys
 import os
 import glob
 import pandas as pd
+import argparse
 
-def get_newsgroup_data(useN=100):
-    
-    nd = fetch_20newsgroups(shuffle=True, random_state=0)
-    texts, fnames =  nd['data'][:useN], nd['filenames'][:useN]
-    fnames = [fn.split('/')[-1] for fn in fnames]
-    
-    return texts, fnames
+import data_sources
 
-
-def make_textfiles(useN=100, target_dir = 'tmp'):
+def make_textfiles(texts, textnames, target_dir):
     
     # make dir if it doesn't exist
     if not os.path.isdir(target_dir):
         os.mkdir(target_dir)
-        print('Created new dir', target_dir)
     
     # delete .txt files if they already exist
     files = glob.glob(target_dir + '/' + '*.txt')
@@ -27,52 +19,57 @@ def make_textfiles(useN=100, target_dir = 'tmp'):
         os.remove(fname)
         i += 1
     print('Removed', i, 'files that previously existed.')
-    
-    nd = fetch_20newsgroups(shuffle=True, random_state=0)
-    texts, fnames =  nd['data'][:useN], nd['filenames'][:useN]
 
-    for fn,t in zip(fnames,texts):
+    for fn,t in zip(textnames,texts):
         with open(target_dir + '/'+fn.split('/')[-1]+'.txt', 'w') as f:
             f.write(t)
-            
-    print('Added', len(texts), 'new files to', target_dir)
     
 
-def make_spreadsheet(useN=100, target_fname = 'tmp_example.csv'):
+def make_spreadsheet(texts, textnames, target_fname):
     
-    nd = fetch_20newsgroups(shuffle=True, random_state=0)
-    texts, fnames =  nd['data'][:useN], nd['filenames'][:useN]
-    fnames = [fn.split('/')[-1] for fn in fnames]
     
-    df = pd.DataFrame(index=range(len(fnames)), columns=['text',])
-    for i, fn,t in zip(range(len(fnames)),fnames,texts):
-        df.loc[i,'title'] = fn
+    df = pd.DataFrame(index=range(len(textnames)), columns=['text','name'])
+    for i, t,n in zip(range(len(textnames)), texts, textnames):
+        df.loc[i,'name'] = n
         df.loc[i,'text'] = t
-     
+    
     df.to_csv(target_fname, index=False)
     
-    print('saved texts to', target_fname)
     
     
+    
+def get_parser():
+    parser = argparse.ArgumentParser(description='Dump data for example text processing.')
+    parser.add_argument('corpus', choices=('brown','gutenberg','newsgroup'), help='Format of output.')
+    #parser.add_argument('datatype', choices=('spreadsheet','textfiles'), help='Format of output.')
+    parser.add_argument('outfile', type=str, help='Folder or csv file for output.')
+    parser.add_argument('-n','--numdocs', type=int, required=False, default=100, help='Number of docs to output.')
+    return parser
     
 
 if __name__ == '__main__':
     
-    if not len(sys.argv) > 1:
-        raise Exception('Need to provde command from {spreadsheet, textfiles, singletext}')
-    
-    cmd_type = sys.argv[1]
-    if len(sys.argv) > 2:
-        useN = int(sys.argv[2])
-    else:
-        useN = 100
+    # build command line interface
+    parser = get_parser()
+    args = parser.parse_args()
+
         
-    # run commands
-    if cmd_type == 'spreadsheet':
-        make_spreadsheet(useN,)
-        
-    elif cmd_type == 'textfiles':
-        make_textfiles(useN,)
+    # retrieve data
+    if args.corpus == 'brown':
+        texts, names = data_sources.get_brown_data(args.numdocs)
     
+    elif args.corpus == 'gutenberg':
+        texts, names = data_sources.get_gutenberg_data(args.numdocs)
+    
+    elif args.corpus == 'newsgroup':
+        texts, names = data_sources.get_newsgroup_data(args.numdocs)
+        
+    # save output data
+    if args.outfile.endswith('.csv'):
+        make_spreadsheet(texts,names,args.outfile)
+        print('saved texts to', args.outfile)
+        
     else:
-        raise Exception('Enter a valid command! Options: {spreadsheet, textfiles}')
+        make_textfiles(texts,names,args.outfile)
+        print('saving output into', args.outfile)
+        
