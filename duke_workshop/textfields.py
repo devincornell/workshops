@@ -75,8 +75,8 @@ def calc_ppmi(C, alpha=0.75, k=None):
 def calc_svd(X, n_dim):
     U, sigma, Vh = np.linalg.svd(X, full_matrices=False, compute_uv=True)
     ind_order = sigma.argsort()[::-1]
-    X_svd = np.dot(U,np.diag(sigma))[:,ind_order][:,:n_dim]
-    return X_svd
+    X_pca = np.dot(U,np.diag(sigma))[:,ind_order][:,:n_dim]
+    return X_pca
 
 # JUST CARRIED OVER FROM OLD NOTEBOOK
 def max_word_pmi():
@@ -131,4 +131,7 @@ Positive pointwise mutual information is a variant of PMI which sets negative va
 Levy, Goldberg, Dagan (2015) _Improving Distributional Similarity with Lessons Learned from Word Embeddings_ ([link])(https://levyomer.files.wordpress.com/2015/03/improving-distributional-similarity-tacl-2015.pdf).
 '''
     
-    
+'''
+### Singular Value Decomposition of PPMI Matrix
+This is simply decomposing the PPMI matrix into singular values, which we used to compress the matrix. Note that in cases where your vocab is larger than the number of documents, read the [implementation notes](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.svd.html#numpy.linalg.svd).
+'''
