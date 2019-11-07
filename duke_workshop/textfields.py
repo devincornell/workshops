@@ -74,9 +74,9 @@ def calc_ppmi(C, alpha=0.75, k=None):
 
 def calc_svd(X, n_dim):
     U, sigma, Vh = np.linalg.svd(X, full_matrices=False, compute_uv=True)
-    ind_order = sigma.argsort()[::-1]
-    X_pca = np.dot(U,np.diag(sigma))[:,ind_order][:,:n_dim]
+    X_pca = np.dot(U,np.diag(sigma))[:,:n_dim]
     return X_pca
+
 
 # JUST CARRIED OVER FROM OLD NOTEBOOK
 def max_word_pmi():
