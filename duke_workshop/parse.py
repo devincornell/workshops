@@ -1,4 +1,6 @@
 
+from sklearn.feature_extraction.text import CountVectorizer
+
 def read_paragraphs(fname):
     with open(fname, 'r') as f:
         text = f.read()
@@ -26,3 +28,15 @@ def parse_doc(doc):
         ent.merge(tag=ent.root.tag_, ent_type=ent.root.ent_type_)
     return [parse_tok(tok) for tok in doc if use_tok(tok)]
 
+
+def make_bow_matrix(tokenized_docs, min_df=1, min_doc_wordcount=1):
+    vectorizer = CountVectorizer(tokenizer = lambda x: x, preprocessor=lambda x:x, min_df=min_df)
+    corpus = vectorizer.fit_transform(tokenized_docs)
+    vocab = vectorizer.get_feature_names()
+    COOC = corpus.toarray()
+    
+    # drop docs with less than min_doc_wordcount words in vocab
+    zerosel = COOC.sum(axis=1) < min_doc_wordcount
+    COOC = COOC[~zerosel]
+
+    return COOC, vocab, zerosel
