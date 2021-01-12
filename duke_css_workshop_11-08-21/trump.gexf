@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2019-11-07">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="typ" type="string" />
+      <attribute id="1" title="ent" type="string" />
+      <attribute id="2" title="ct" type="long" />
+    </attributes>
+    <nodes>
+      <node id="America" label="America">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="11" />
+        </attvalues>
+      </node>
+      <node id="is" label="is">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="45" />
+        </attvalues>
+      </node>
+      <node id="It" label="It">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="We" label="We">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="218" />
+        </attvalues>
+      </node>
+      <node id="we" label="we">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="50" />
+        </attvalues>
+      </node>
+      <node id="are" label="are">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="43" />
+        </attvalues>
+      </node>
+      <node id="The United States" label="The United States">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="102" />
+        </attvalues>
+      </node>
+      <node id="actors" label="actors">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="China" label="China">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="19" />
+        </attvalues>
+      </node>
+      <node id="They" label="They">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="17" />
+        </attvalues>
+      </node>
+      <node id="they" label="they">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="require" label="require">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="the United States" label="the United States">
+        <attvalues>
+          <attvalue for="0" value="dobj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="29" />
+        </attvalues>
+      </node>
+      <node id="use" label="use">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="28" />
+        </attvalues>
+      </node>
+      <node id="continue" label="continue">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="22" />
+        </attvalues>
+      </node>
+      <node id="ability" label="ability">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="13" />
+        </attvalues>
+      </node>
+      <node id="strengthen" label="strengthen">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="18" />
+        </attvalues>
+      </node>
+      <node id="pursue" label="pursue">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="16" />
+        </attvalues>
+      </node>
+      <node id="threats" label="threats">
+        <attvalues>
+          <attvalue for="0" value="dobj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="promote" label="promote">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="16" />
+        </attvalues>
+      </node>
+      <node id="capabilities" label="capabilities">
+        <attvalues>
+          <attvalue for="0" value="dobj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="remain" label="remain">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="seeks" label="seeks">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="build" label="build">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="11" />
+        </attvalues>
+      </node>
+      <node id="be" label="be">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="17" />
+        </attvalues>
+      </node>
+      <node id="efforts" label="efforts">
+        <attvalues>
+          <attvalue for="0" value="dobj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="11" />
+        </attvalues>
+      </node>
+      <node id="work" label="work">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="32" />
+        </attvalues>
+      </node>
+      <node id="have" label="have">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="23" />
+        </attvalues>
+      </node>
+      <node id="encourage" label="encourage">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="32" />
+        </attvalues>
+      </node>
+      <node id="enhance" label="enhance">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="ORG" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="increase" label="increase">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="improve" label="improve">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="28" />
+        </attvalues>
+      </node>
+      <node id="support" label="support">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="25" />
+        </attvalues>
+      </node>
+      <node id="offer" label="offer">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="expand" label="expand">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="ORG" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="prioritize" label="prioritize">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="requires" label="requires">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="seek" label="seek">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="17" />
+        </attvalues>
+      </node>
+      <node id="Russia" label="Russia">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="GPE" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="maintain" label="maintain">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="11" />
+        </attvalues>
+      </node>
+      <node id="has" label="has">
+        <attvalues>
+          <attvalue for="0" value="ROOT" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="14" />
+        </attvalues>
+      </node>
+      <node id="states" label="states">
+        <attvalues>
+          <attvalue for="0" value="nsubj" />
+          <attvalue for="1" value="" />
+          <attvalue for="2" value="19" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="America" target="is" weight="4" />
+      <edge id="1" source="America" target="be" weight="1" />
+      <edge id="2" source="It" target="is" weight="4" />
+      <edge id="3" source="We" target="is" weight="1" />
+      <edge id="4" source="We" target="are" weight="8" />
+      <edge id="5" source="We" target="strengthen" weight="7" />
+      <edge id="6" source="We" target="build" weight="2" />
+      <edge id="7" source="We" target="be" weight="3" />
+      <edge id="8" source="We" target="work" weight="18" />
+      <edge id="9" source="We" target="encourage" weight="9" />
+      <edge id="10" source="We" target="increase" weight="2" />
+      <edge id="11" source="We" target="improve" weight="8" />
+      <edge id="12" source="We" target="enhance" weight="1" />
+      <edge id="13" source="We" target="support" weight="9" />
+      <edge id="14" source="We" target="use" weight="4" />
+      <edge id="15" source="We" target="expand" weight="3" />
+      <edge id="16" source="We" target="have" weight="1" />
+      <edge id="17" source="We" target="continue" weight="7" />
+      <edge id="18" source="We" target="prioritize" weight="1" />
+      <edge id="19" source="We" target="require" weight="2" />
+      <edge id="20" source="We" target="remain" weight="5" />
+      <edge id="21" source="We" target="seek" weight="5" />
+      <edge id="22" source="We" target="pursue" weight="1" />
+      <edge id="23" source="We" target="maintain" weight="2" />
+      <edge id="24" source="We" target="offer" weight="1" />
+      <edge id="25" source="we" target="are" weight="2" />
+      <edge id="26" source="we" target="pursue" weight="1" />
+      <edge id="27" source="we" target="promote" weight="1" />
+      <edge id="28" source="we" target="remain" weight="1" />
+      <edge id="29" source="we" target="work" weight="1" />
+      <edge id="30" source="we" target="strengthen" weight="1" />
+      <edge id="31" source="we" target="have" weight="1" />
+      <edge id="32" source="we" target="build" weight="3" />
+      <edge id="33" source="we" target="enhance" weight="1" />
+      <edge id="34" source="we" target="improve" weight="1" />
+      <edge id="35" source="we" target="seek" weight="2" />
+      <edge id="36" source="we" target="increase" weight="1" />
+      <edge id="37" source="we" target="continue" weight="1" />
+      <edge id="38" source="we" target="encourage" weight="2" />
+      <edge id="39" source="The United States" target="continue" weight="6" />
+      <edge id="40" source="The United States" target="improve" weight="1" />
+      <edge id="41" source="The United States" target="pursue" weight="4" />
+      <edge id="42" source="The United States" target="use" weight="4" />
+      <edge id="43" source="The United States" target="expand" weight="2" />
+      <edge id="44" source="The United States" target="work" weight="4" />
+      <edge id="45" source="The United States" target="build" weight="1" />
+      <edge id="46" source="The United States" target="prioritize" weight="3" />
+      <edge id="47" source="The United States" target="remain" weight="1" />
+      <edge id="48" source="The United States" target="promote" weight="5" />
+      <edge id="49" source="The United States" target="support" weight="2" />
+      <edge id="50" source="The United States" target="seek" weight="3" />
+      <edge id="51" source="The United States" target="maintain" weight="3" />
+      <edge id="52" source="The United States" target="seeks" weight="3" />
+      <edge id="53" source="The United States" target="have" weight="1" />
+      <edge id="54" source="The United States" target="encourage" weight="3" />
+      <edge id="55" source="The United States" target="is" weight="1" />
+      <edge id="56" source="The United States" target="has" weight="1" />
+      <edge id="57" source="actors" target="use" weight="3" />
+      <edge id="58" source="actors" target="are" weight="1" />
+      <edge id="59" source="China" target="seeks" weight="2" />
+      <edge id="60" source="China" target="support" weight="1" />
+      <edge id="61" source="They" target="are" weight="4" />
+      <edge id="62" source="they" target="are" weight="3" />
+      <edge id="63" source="require" target="the United States" weight="1" />
+      <edge id="64" source="the United States" target="pursue" weight="1" />
+      <edge id="65" source="the United States" target="continue" weight="2" />
+      <edge id="66" source="the United States" target="prioritize" weight="1" />
+      <edge id="67" source="the United States" target="be" weight="3" />
+      <edge id="68" source="the United States" target="has" weight="1" />
+      <edge id="69" source="the United States" target="promote" weight="1" />
+      <edge id="70" source="use" target="capabilities" weight="1" />
+      <edge id="71" source="ability" target="is" weight="1" />
+      <edge id="72" source="ability" target="requires" weight="2" />
+      <edge id="73" source="strengthen" target="capabilities" weight="1" />
+      <edge id="74" source="pursue" target="threats" weight="1" />
+      <edge id="75" source="threats" target="are" weight="1" />
+      <edge id="76" source="seeks" target="states" weight="1" />
+      <edge id="77" source="have" target="ability" weight="1" />
+      <edge id="78" source="encourage" target="states" weight="1" />
+      <edge id="79" source="increase" target="efforts" weight="1" />
+      <edge id="80" source="improve" target="ability" weight="2" />
+      <edge id="81" source="support" target="efforts" weight="4" />
+      <edge id="82" source="prioritize" target="efforts" weight="1" />
+      <edge id="83" source="requires" target="support" weight="1" />
+      <edge id="84" source="requires" target="use" weight="1" />
+      <edge id="85" source="seek" target="capabilities" weight="1" />
+      <edge id="86" source="seek" target="states" weight="1" />
+      <edge id="87" source="Russia" target="seeks" weight="1" />
+      <edge id="88" source="maintain" target="capabilities" weight="1" />
+      <edge id="89" source="states" target="are" weight="4" />
+      <edge id="90" source="states" target="enhance" weight="1" />
+      <edge id="91" source="states" target="have" weight="1" />
+    </edges>
+  </graph>
+</gexf>
